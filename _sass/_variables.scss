@@ -1,0 +1,30 @@
+
+//
+// VARIABLES
+//
+
+// Colors
+$blue: rgba(44,83,158,1);
+$fadedBlue: rgba(44,83,158,.75);
+
+$hover: #eee;
+
+// Grays
+$black: #000;
+$darkGray: #333;
+$gray: #666;
+$lightGray: #eee;
+$white: #fff;
+
+// Font stacks
+$helvetica: Helvetica, Arial, sans-serif;
+$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: Georgia, serif;
+$playfair: "Playfair Display", "Helvetica Neue", Helvetica, sans-serif;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}

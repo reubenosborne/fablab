@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<article class="entry">
+	<h1>{{ page.title }}</h1>
+	
+	<h5>"{{ page.excerpt }}"</h5>
+
+	<hr>
+	
+	<p class="date">
+		Written on {{ page.date | date: "%B %e, %Y" }} &nbsp;&nbsp;
+		<span class="read">
+			{% capture words %}
+			{{ page.content | number_of_words | minus: 250 }}
+			{% endcapture %}
+			{% unless words contains "-" %}
+			{{ words | plus: 250 | divided_by: 180 | append: "m read" }}
+			{% endunless %}
+		</span>
+	</p>
+
+	{{ content }}
+
+	{% include disqus.html %}
+	
+</article>
+
+<div class="footer" style="background-image: url('../images/{{ page.img }}')">
+	<div class="overlay overlay-dark flex">
+		<a href="/blog" class="back button flex">Back to Blog</a>
+	</div>
+</div>

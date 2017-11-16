@@ -1,0 +1,20 @@
+---
+layout: default
+title: Work
+permalink: /work/
+---
+
+<div class="posts">
+	{% for post in site.posts %}
+	{% if post.category contains 'work' %}
+	<article class="post flex" style="background-image: url('../images/{{ post.img }}')">
+		<a href="{{ site.baseurl }}{{ post.url }}">
+			<div class="overlay overlay-dark flex">
+				<h4>{{ post.title }}</h4>
+				<p>{{ post.excerpt }}</p>
+			</div>
+		</a>
+	</article>
+	{% endif %}
+	{% endfor %}
+</div>
