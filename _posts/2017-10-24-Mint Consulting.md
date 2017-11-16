@@ -4,7 +4,6 @@ category: work
 title: Mint Consulting
 excerpt: Website for NZ consulting company
 img: mint.png
-img2: mint2.png
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, aut nesciunt quae voluptatum necessitatibus, optio nemo! Facere beatae quaerat modi eligendi ex aut quod laborum, laudantium porro accusantium, temporibus repellat?
